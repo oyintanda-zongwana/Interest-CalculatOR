@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculate</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <h1>Simple Interest Calculator</h1>
+    <form onsubmit="event.preventDefault(); calculateInterest();">
+        <label for="principal">Principal amount (R):</label>
+        <input type="number" id="principal" name="principal" required>
+        <br><br>
+        <label for="rate">Interest rate (%):</label>
+        <input type="number" id="rate" name="rate" required>
+        <br><br>
+        <label for="time">Time period (years):</label>
+        <input type="number" id="time" name="time" required>
+        <br><br>
+        <button type="submit">Calculate Interest</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>
